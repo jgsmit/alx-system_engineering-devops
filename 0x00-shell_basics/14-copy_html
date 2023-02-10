@@ -1,26 +1,2 @@
 #!/bin/bash
-
-
-
-current_dir=$(pwd)
-
-parent_dir=$(dirname "$current_dir")
-
-
-
-for file in *.html; do
-    
-    if [ -f "$file" ]; then
-	
-	parent_file="$parent_dir/$file"
-	
-	if [ ! -f "$parent_file" ] || [ "$file" -nt "$parent_file" ]; then
-	    
-	    cp "$file" "$parent_dir"
-	    
-	fi
-	
-    fi
-    
-done
-
+cwd=/alx-system_engineering-devops/0x00-shell_basics
