@@ -3,3 +3,4 @@ username=$(whoami)
 
 echo "The effective username is: $username"
 
+This is a new line.\n
