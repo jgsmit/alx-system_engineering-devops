@@ -1,2 +1,5 @@
 #!/bin/bash
-John
+username=$(whoami)
+
+echo "The effective username is: $username"
+
