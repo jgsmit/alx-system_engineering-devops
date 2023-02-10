@@ -1,20 +1,2 @@
 #!/bin/bash
-
-
-
-file_path="/tmp/iamafile"
-
-
-
-if [ -f "$file_path" ]; then
-    
-    file_type=$(file "$file_path")
-    
-    echo "The type of $file_path is $file_type"
-    
-else
-    
-    echo "$file_path does not exist or is not a regular file."
-    
-fi
-
+touch /tmp/iamafile
