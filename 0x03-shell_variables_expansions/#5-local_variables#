@@ -1,0 +1,4 @@
+#!/bin/bash
+set | grep '^[[:alnum:]]'
+printenv
+declare -F
